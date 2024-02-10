@@ -25,10 +25,10 @@
       <div class="collapse navbar-collapse" id="navbar-content">
         <ul class="navbar-nav me-auto">
           <li class="navbar-item">
-            <a class="nav-link" href="#profile">My Profile</a>
+            <a class="nav-link" href="#about">About Me</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#profile">My Profile</a>
           </li>
           <li class="navbar-item">
             <a class="nav-link" href="#skill">Skill</a>
@@ -51,18 +51,18 @@
     <h1 class="text-center display-1 py-5">Tatsuki's Portfolio</h1>
 
     <!-- プロフィール -->
-    <section id="profile" class="bg-light">
+    <section id="about" class="bg-light">
       <div class="container">
-        <div class="row justify-content-evenly align-items-center mb-4">
+        <div class="row justify-content-evenly align-items-center py-4">
           <div class="col-lg-4">
-            <h1 class="mb-3 text-center">My Profile</h1>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-person-vcard"></i>名前：野口達暉 (のぐちたつき)</li>
-              <li><i class="bi bi-geo-alt"></i>出身：茨城県</li>
-              <li><i class="bi bi-calendar"></i>年齢：21歳 (2002年生まれ)</li>
-              <li><i class="bi bi-building"></i>所属：茨城工業高等専門学校 専攻科</li>
-              <li><i class="bi bi-music-note"></i>趣味：ゲーム、車でドライブ旅、など</li>
-            </ul>
+            <h1 class="mb-3 border-start border-4 border-black ps-2">About Me</h1>
+            <div>
+              <p><i class="bi bi-person-vcard"></i>名前：野口達暉 (のぐちたつき)</p>
+              <p><i class="bi bi-geo-alt"></i>出身：茨城生まれ 茨城育ち</p>
+              <p><i class="bi bi-calendar"></i>年齢：21歳 (2002年生まれ)</p>
+              <p><i class="bi bi-building"></i>所属：茨城工業高等専門学校 専攻科</p>
+              <p><i class="bi bi-music-note"></i>趣味：ゲーム、車でドライブ旅、など</p>
+            </div>
           </div>
           <div class="col-lg-4">
             <img class="img-fluid" src="./imgs/fuji_car.jpeg" alt="富士山と駿河湾をバックにした自分の車の写真">
@@ -72,12 +72,32 @@
     </section>
 
     <!-- 自己紹介 -->
-    <section id="about">
+    <section id="profile">
       <div class="container">
-        <div class="row justify-content-evenly align-items-center mb-4">
-          <div class="col-lg-4 order-lg-2">
-            <h1 class="mb-3 text-center">About Me</h1>
-            <p>小中学生の頃より熱中していたテレビゲーム、PCゲームがきっかけでコンピュータに漠然とした興味を持ち茨城高専へ入学。情報系を卒業し、現在同高専専攻科情報工学コース在学中。</p>
+        <div class="row justify-content-center align-items-center py-4">
+          <div class="col-lg-8 order-lg-2">
+            <h1 class="mb-3 border-start border-4 border-black ps-2">My Profile</h1>
+            <!-- <p>小中学生の頃より熱中していたテレビゲーム、PCゲームがきっかけでコンピュータに漠然とした興味を持ち茨城高専へ入学。情報系を卒業し、現在同高専専攻科情報工学コース在学中。</p> -->
+            <table class="table align-middle">
+              <tbody>
+                <tr>
+                  <th scope="row" style="white-space: nowrap;">～小学校</th>
+                  <td>幼少の頃よりテレビゲームに熱中。小学校高学年時にPCを買い与えてもらった事をきっかけに、（ゲーム）プログラミングというものに漠然とした興味を持つ。偶然にも高専生だった従兄の話を聞き、高専入学に強く興味を持つ。</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="white-space: nowrap;">中学校</th>
+                  <td>勉強と部活動（剣道部）の日々。部活動では１年の夏に手術を要するほどの大怪我を負ったりと波乱万丈ではあったが、最終的には総体出場と剣道二段を取得。勉強においても第一志望であった茨城高専を受験し無事合格。</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="white-space: nowrap;">高専（本科）</th>
+                  <td>勉強とアルバイトを両立。中学時代までコミュニケーションに苦手意識があったが、友人に恵まれた高専生活や、アルバイトを通して、確かな自信が身に付いた。</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="white-space: nowrap;">高専（専攻科）</th>
+                  <td>スキルアップと自分への挑戦として、ハッカソン形式のインターンに参加。自分にとって初めての規模のチーム開発であったが、意欲的なチームメイトに恵まれ、チーム開発の楽しさややりがいを知る。</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="col-lg-4 order-lg-1">
             <img class="img-fluid" src="./imgs/kosen_sakura.jpeg" alt="茨城高専をバックにした桜の写真">
@@ -90,12 +110,12 @@
     <section id="skill" class="bg-light">
       <div class="container py-3">
         <h1 class="mb-3 text-center">Skill</h1>
-        <div class="row justify-content-around align-items-center border-bottom py-1 mb-3">
+        <div class="row justify-content-around align-items-center border-bottom py-4">
           <div class="col-3 text-center">
             <h4>Python</h4>
           </div>
           <div class="col-8">
-            <span>高専でのデータ分析や機械学習についての研究活動で活用。私が最も頻繁に書くプログラミング言語。</span>
+            <span>高専でのデータ分析や機械学習についての研究活動で活用。私が最も頻繁に扱うプログラミング言語。</span>
           </div>
         </div>
         <div class="row justify-content-around align-items-center border-bottom py-1 mb-3">
@@ -108,10 +128,12 @@
         </div>
         <div class="row justify-content-around align-items-center py-1">
           <div class="col-3 text-center">
-            <h5>C</h5>
-            <h5>Java</h5>
+            <h4>C</h4>
+            <h4>Java</h4>
+            <h4>SQL</h4>
             <h5>Kotolin</h5>
-            <h5>SQL</h5>
+            <h6 class="text-secondary">Ruby</h6>
+            <h6 class="text-secondary">Perl</h6>
           </div>
           <div class="col-8">
             <span>高専での講義で触れたことのある言語たち。</span>
@@ -124,7 +146,7 @@
     <section id="works">
       <div class="container py-3">
         <h1 class="text-center mb-3">Works</h1>
-        <div class="row justify-content-evenly mb-4">
+        <div class="row justify-content-evenly py-4">
           <div class="col-lg mb-3">
             <div class="card">
               <img src="./imgs/Tatsuki'sPortfolio.png" class="card-img-top" alt="...">
