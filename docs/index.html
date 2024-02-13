@@ -20,7 +20,8 @@
         <i class="bi bi-clipboard2"></i>
         Tatsuki's Portfolio
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-content">
@@ -83,11 +84,15 @@
               <tbody>
                 <tr>
                   <th scope="row" style="white-space: nowrap;">～小学校</th>
-                  <td>幼少の頃よりテレビゲームに熱中。小学校高学年時にPCを買い与えてもらった事をきっかけに、（ゲーム）プログラミングというものに漠然とした興味を持つ。偶然にも高専生だった従兄の話を聞き、高専入学に強く興味を持つ。</td>
+                  <td>
+                    幼少の頃よりテレビゲームに熱中。小学校高学年時にPCを買い与えてもらった事をきっかけに、（ゲーム）プログラミングというものに漠然とした興味を持つ。偶然にも高専生だった従兄の話を聞き、高専入学に強く興味を持つ。
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row" style="white-space: nowrap;">中学校</th>
-                  <td>勉強と部活動（剣道部）の日々。部活動では１年の夏に手術を要するほどの大怪我を負ったりと波乱万丈ではあったが、最終的には総体出場と剣道二段を取得。勉強においても第一志望であった茨城高専を受験し無事合格。</td>
+                  <td>
+                    勉強と部活動（剣道部）の日々。部活動では１年の夏に手術を要するほどの大怪我を負ったりと波乱万丈ではあったが、最終的には総体出場と剣道二段を取得。勉強においても第一志望であった茨城高専を受験し無事合格。
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row" style="white-space: nowrap;">高専（本科）</th>
@@ -153,7 +158,13 @@
               <img src="./imgs/Tatsuki'sPortfolio.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Tatsuki's Portfolio</h5>
-                <p class="card-text">私のポートフォリオサイト。レスポンシブデザイン対応。</p>
+                <p class="card-text">私のポートフォリオサイト。</p>
+                <div>
+                  <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal"
+                    data-bs-target="#portfolioModal">
+                    Detail
+                  </button>
+                </div>
                 <a href="#" class="btn btn-primary mb-1">
                   <i class="bi bi-box-arrow-up-right"></i> Go to Site
                 </a>
@@ -162,13 +173,36 @@
                 </a>
               </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="portfolioModalLabel">Tatsuki's Portfolio</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-fluid" src="./imgs/Tatsuki'sPortfolio.png">
+                    私のポートフォリオサイト。レスポンシブデザイン対応。
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="col-lg mb-3">
             <div class="card">
               <img src="./imgs/mycalendar.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">My Calendar</h5>
-                <p class="card-text">シンプルなカレンダー。現在の日付と祝日の表示に対応。レスポンシブデザイン対応。</p>
+                <p class="card-text">シンプルなカレンダー。</p>
+                <div>
+                  <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal"
+                    data-bs-target="#calendarModal">
+                    Detail
+                  </button>
+                </div>
                 <a href="https://donguri2828.github.io/my-calendar/" class="btn btn-primary mb-1">
                   <i class="bi bi-box-arrow-up-right"></i> Go to Site
                 </a>
@@ -177,19 +211,59 @@
                 </a>
               </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="calendarModalLabel">My Calendar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-fluid" src="./imgs/mycalendar.png" alt="">
+                    シンプルなカレンダー。現在の日付と祝日の表示に対応。レスポンシブデザイン対応。
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
+
           <div class="col-lg mb-3">
             <div class="card">
               <img src="./imgs/diary.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">ぜったいかききれるにっきちょう</h5>
-                <p class="card-text">小学生をターゲットにした一行日記作成支援アプリ。フロントエンド (UI等の実装) を担当。(現在稼働停止中)</p>
+                <p class="card-text"></p>
+                <div>
+                  <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal"
+                    data-bs-target="#diaryModal">
+                    Detail
+                  </button>
+                </div>
+
                 <a href="" class="btn btn-primary disabled mb-1">
                   <i class="bi bi-box-arrow-up-right"></i> Go to Site
                 </a>
                 <a href="https://github.com/jigintern/2023-summer-c" class="btn btn-secondary mb-1">
                   <i class="bi bi-github"></i> Repository
                 </a>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="diaryModal" tabindex="-1" aria-labelledby="diaryModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="diaryModalLabel">ぜったいかききれるにっきちょう</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-fluid" src="./imgs/diary.png" alt="">
+                    小学生をターゲットにした一行日記作成支援アプリ。フロントエンド (UI等の実装) を担当。(現在稼働停止中)
+                  </div>
+                </div>
               </div>
             </div>
           </div>
